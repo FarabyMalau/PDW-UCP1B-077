@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join – Tech Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">⬡ TECH<span>COMM</span></div>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./form.html" class="active">Join</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- FORM HERO -->
+  <section class="page-hero">
+    <div class="hero-bg-grid"></div>
+    <h1>Daftar <span>Anggota</span></h1>
+    <p>Isi form berikut untuk bergabung dengan Tech Community</p>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="form-section">
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-step">FORM PENDAFTARAN</div>
+        <h2>Data Diri Anggota</h2>
+      </div>
+
+      <div class="form-body">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukkan nama lengkap..." autocomplete="off" />
+          <span class="form-hint">Gunakan nama sesuai identitas resmi</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" placeholder="contoh@email.com" autocomplete="off" />
+          <span class="form-hint">Email aktif untuk komunikasi komunitas</span>
+        </div>
+
+        <div class="form-group">
+          <label for="minat">Bidang Minat</label>
+          <div class="select-wrapper">
+            <select id="minat">
+              <option value="" disabled selected>-- Pilih bidang minat --</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile Development">Mobile Development</option>
+              <option value="Data Science">Data Science</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="Cloud Computing">Cloud Computing</option>
+              <option value="Artificial Intelligence">Artificial Intelligence</option>
+              <option value="Game Development">Game Development</option>
+            </select>
+          </div>
+          <span class="form-hint">Pilih bidang yang paling sesuai minatmu</span>
+        </div>
+
+        <button class="btn-primary btn-full" id="submitBtn" onclick="submitForm()">
+          Daftar Sekarang →
+        </button>
+      </div>
+    </div>
+
+    <!-- RESULT PANEL -->
+    <div class="result-panel" id="resultPanel" style="display:none;">
+      <div class="result-header">
+        <span class="result-icon">✓</span>
+        <h3>Pendaftaran Berhasil!</h3>
+      </div>
+      <div class="result-body" id="resultBody">
+        <!-- diisi JS -->
+      </div>
+      <div class="result-footer">
+        <p id="totalCount"></p>
+        <a href="./index.html" class="btn-outline">← Lihat Semua Anggota</a>
+      </div>
+    </div>
+
+    <!-- DAFTAR ANGGOTA TERSIMPAN -->
+    <div class="saved-section" id="savedSection" style="display:none;">
+      <h3>Anggota Tersimpan (Sesi Ini)</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nama</th>
+              <th>Email</th>
+              <th>Bidang Minat</th>
+            </tr>
+          </thead>
+          <tbody id="savedBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>⬡ Tech Community &copy; 2026 &mdash; Built with HTML, CSS & JS</p>
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./form.html">Join</a>
+      <a href="./gallery.html">Gallery</a>
+    </div>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./form.js"></script>
+</body>
+</html>
