@@ -1,130 +1,57 @@
-:root {
-    --primary: #6366f1;
-    --dark: #0f172a;
-    --light: #f8fafc;
-    --accent: #00f2ff;
-    --gray: #64748b;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Syne', sans-serif;
-    background-color: var(--light);
-    color: var(--dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
     line-height: 1.6;
+    background-color: #f4f7f6;
 }
 
-/* NAVBAR [cite: 11] */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    background: white;
-    border-bottom: 1px solid #e2e8f0;
-}
-
-.nav-brand { font-weight: 800; font-size: 1.5rem; }
-.nav-brand span { color: var(--primary); }
-.nav-links { display: flex; list-style: none; gap: 2rem; }
-.nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; }
-.nav-links a.active { color: var(--primary); }
-
-/* HERO SECTION [cite: 17] */
-.hero, .page-hero {
-    padding: 5rem 5%;
+nav {
+    background: #2c3e50;
+    padding: 1rem;
     text-align: center;
-    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
 }
 
-.hero-title { font-size: 4rem; line-height: 1; margin-bottom: 1rem; }
-.hero-title span { color: var(--primary); }
-
-/* BUTTONS  */
-.btn-primary {
-    background: var(--primary);
+nav a {
     color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
     text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-.btn-outline {
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    padding: 0.8rem 2rem;
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
     border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* TABLE STYLING [cite: 15, 19] */
-.table-wrapper {
-    overflow-x: auto;
-    margin: 2rem 5%;
-}
+h1, h2 { color: #2c3e50; }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    margin-top: 20px;
 }
 
-th, td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #f1f5f9;
-}
+table, th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
 
-th { background: var(--dark); color: white; }
+th { background-color: #3498db; color: white; }
 
-/* FORM [cite: 15, 22] */
-.form-container {
-    max-width: 600px;
-    margin: -50px auto 50px;
-    background: white;
-    padding: 2.5rem;
-    border-radius: 20px;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-}
-
-.form-group { margin-bottom: 1.5rem; }
-.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
-input, select {
+input, select, button {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
-/* MEDIA BLOCK [cite: 28] */
-.media-block {
-    padding: 3rem 5%;
-    max-width: 1000px;
-    margin: auto;
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.img-main-wrap img {
-    width: 100%;
-    border-radius: 12px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.video-wrap iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 12px;
-}
+button:hover { background-color: #2ecc71; }
