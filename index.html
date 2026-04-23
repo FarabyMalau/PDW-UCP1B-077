@@ -1,107 +1,37 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tech Community</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
+    <title>Tech Community - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-brand">⬡ TECH<span>COMM</span></div>
-    <ul class="nav-links">
-      <li><a href="./index.html" class="active">Home</a></li>
-      <li><a href="./form.html">Join</a></li>
-      <li><a href="./gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge">EST. 2026</div>
-      <h1 class="hero-title">Tech<br/><span>Community</span></h1>
-      <p class="hero-desc">
-        Komunitas teknologi terbuka bagi siapa saja yang ingin belajar, berbagi, dan berkembang bersama di dunia digital.
-      </p>
-      <div class="hero-actions">
-        <a href="./form.html" class="btn-primary">Bergabung Sekarang</a>
-        <a href="./gallery.html" class="btn-outline">Lihat Gallery</a>
-      </div>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./form.html">Join Us</a>
+        <a href="./gallery.html">Multimedia</a>
+    </nav>
+    <div class="container">
+        <h1>Tech Community</h1>
+        <p>Wadah kolaborasi bagi mahasiswa IT untuk belajar teknologi terbaru, mulai dari Web Development hingga AI.</p>
+        
+        <h2>Daftar Anggota</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Bidang Minat</th>
+                </tr>
+            </thead>
+            <tbody id="memberTableBody">
+                <tr>
+                    <td>Budi Santoso</td>
+                    <td>budi@email.com</td>
+                    <td>Cyber Security</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="hero-visual">
-      <div class="hex-grid">
-        <div class="hex" style="--d:0s"><span>HTML</span></div>
-        <div class="hex" style="--d:.1s"><span>CSS</span></div>
-        <div class="hex" style="--d:.2s"><span>JS</span></div>
-        <div class="hex" style="--d:.3s"><span>UI/UX</span></div>
-        <div class="hex" style="--d:.4s"><span>Git</span></div>
-        <div class="hex" style="--d:.5s"><span>API</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section class="about-section">
-    <div class="about-card">
-      <div class="about-icon">🚀</div>
-      <h3>Belajar Bersama</h3>
-      <p>Workshop rutin, sesi coding, dan diskusi teknologi terkini setiap minggunya.</p>
-    </div>
-    <div class="about-card">
-      <div class="about-icon">🤝</div>
-      <h3>Kolaborasi</h3>
-      <p>Bangun project nyata bersama anggota lain dan perluas jaringan profesionalmu.</p>
-    </div>
-    <div class="about-card">
-      <div class="about-icon">💡</div>
-      <h3>Inovasi</h3>
-      <p>Eksplorasi ide-ide baru dan wujudkan solusi digital yang berdampak.</p>
-    </div>
-  </section>
-
-  <!-- MEMBER TABLE -->
-  <section class="members-section">
-    <div class="section-header">
-      <h2>Anggota Komunitas</h2>
-      <span class="section-tag">DATA TERBARU</span>
-    </div>
-    <div class="table-wrapper">
-      <table id="memberTable">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Nama</th>
-            <th>Email</th>
-            <th>Bidang Minat</th>
-          </tr>
-        </thead>
-        <tbody id="memberBody">
-          <!-- diisi JS -->
-        </tbody>
-      </table>
-    </div>
-    <div class="table-footer">
-      <a href="./form.html" class="btn-primary">+ Tambah Anggota</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>⬡ Tech Community &copy; 2026 &mdash; Built with HTML, CSS & JS</p>
-    <div class="footer-links">
-      <a href="./index.html">Home</a>
-      <a href="./form.html">Join</a>
-      <a href="./gallery.html">Gallery</a>
-    </div>
-  </footer>
-
-  <script src="./data.js"></script>
-  <script src="./main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
